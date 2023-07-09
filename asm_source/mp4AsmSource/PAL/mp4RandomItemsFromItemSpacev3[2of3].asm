@@ -1,4 +1,4 @@
-#To be inserted at 80083028
+#To be inserted at 80082ED4
 #patch text
 #r27 holds string id to print
 #817FFFF0 s32 holds chosen item id from earlier code
