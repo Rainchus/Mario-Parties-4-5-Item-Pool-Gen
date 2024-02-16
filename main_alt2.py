@@ -269,7 +269,7 @@ def on_generate_code(tab_control, version_var):
         if (current_tab == 2): #is mp6 
             lowest_price = lowest_price -1 #the instruction `cmpwi r3, 4` has a `ble-` comparison after. Therefore we subtract 1 to correclty set the `cmpwi` instruction
             formatted_lowest_price = "{:04X}".format(lowest_price)
-            gecko_code_string += replace_characters(can_enter_shop_mp6_gecko_codes[current_tab], 23, formatted_lowest_price)
+            gecko_code_string += replace_characters(can_enter_shop_mp6_gecko_codes[version], 23, formatted_lowest_price)
 
     print(gecko_code_string)
 
